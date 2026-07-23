@@ -1,1 +1,660 @@
+/* ==============================
+   SMART SALES ANALYTICS SYSTEM
+   STYLE.CSS
+============================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#f4f7fc;
+
+    color:#333;
+
+    overflow-x:hidden;
+
+}
+
+/* Navbar */
+
+.navbar{
+
+    background:#0d6efd !important;
+
+}
+
+.navbar-brand{
+
+    font-size:24px;
+
+    font-weight:bold;
+
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-left:12px;
+
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:#ffd43b !important;
+
+}
+
+/* Hero Section */
+
+.hero{
+
+    background:linear-gradient(135deg,#0d6efd,#5b9dff);
+
+    color:white;
+
+    padding:100px 0;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+.hero h1{
+
+    font-size:52px;
+
+    font-weight:bold;
+
+}
+
+.hero p{
+
+    font-size:20px;
+
+    margin-top:20px;
+
+}
+
+.hero .btn{
+
+    margin-top:25px;
+
+    margin-right:10px;
+
+    padding:12px 30px;
+
+    border-radius:50px;
+
+}
+
+/* Section */
+
+.section{
+
+    padding:70px 0;
+
+}
+
+/* Cards */
+
+.card{
+
+    border:none;
+
+    border-radius:20px;
+
+    transition:.4s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 20px 35px rgba(0,0,0,.15);
+
+}
+
+.card-header{
+
+    border-radius:20px 20px 0 0 !important;
+
+    font-weight:600;
+
+}
+
+/* KPI Cards */
+
+.kpi-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:25px;
+
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.kpi-card:hover{
+
+    transform:scale(1.04);
+
+}
+
+.kpi-card h6{
+
+    color:#777;
+
+}
+
+.kpi-card h2{
+
+    font-weight:bold;
+
+}
+
+/* Icons */
+
+.icon-circle{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:white;
+
+    font-size:30px;
+
+}
+
+/* Buttons */
+
+.btn-primary{
+
+    border-radius:30px;
+
+    padding:10px 30px;
+
+}
+
+.btn-success{
+
+    border-radius:30px;
+
+}
+
+.btn-warning{
+
+    border-radius:30px;
+
+}
+
+.btn-danger{
+
+    border-radius:30px;
+
+}
+
+/* Tables */
+
+.table{
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+.table th{
+
+    background:#0d6efd;
+
+    color:white;
+
+}
+
+.table td{
+
+    vertical-align:middle;
+
+}
+
+/* Footer */
+
+footer{
+
+    margin-top:60px;
+
+    background:#1c1c1c;
+
+    color:white;
+
+    padding:40px 0;
+
+}
+
+footer a{
+
+    color:white;
+
+    text-decoration:none;
+
+}
+
+footer a:hover{
+
+    color:#ffd43b;
+
+}
+
+/* =====================================
+   PART 3 - PREMIUM UI
+====================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Smooth Scroll */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Custom Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#0d6efd;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#084298;
+}
+
+/* Selection */
+
+::selection{
+    background:#0d6efd;
+    color:white;
+}
+
+/* Page Animation */
+
+body{
+
+    animation:fadeIn 1s;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+/* Glass Effect */
+
+.glass{
+
+    background:rgba(255,255,255,.2);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.3);
+
+}
+
+/* Beautiful Gradient */
+
+.gradient{
+
+    background:linear-gradient(135deg,#0d6efd,#6ea8fe);
+
+}
+
+/* Hover Animation */
+
+.hover-card{
+
+    transition:.4s;
+
+}
+
+.hover-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.2);
+
+}
+
+/* Dashboard Cards */
+
+.kpi-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.kpi-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:120px;
+
+    height:120px;
+
+    background:rgba(255,255,255,.1);
+
+    border-radius:50%;
+
+    top:-40px;
+
+    right:-40px;
+
+}
+
+/* Icons */
+
+.big-icon{
+
+    font-size:60px;
+
+}
+
+/* Button Hover */
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/* Input Focus */
+
+input:focus,
+
+select:focus,
+
+textarea:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:0 0 10px rgba(13,110,253,.25);
+
+}
+
+/* Badge */
+
+.badge{
+
+    font-size:14px;
+
+    padding:8px 15px;
+
+    border-radius:25px;
+
+}
+
+/* Alert */
+
+.alert{
+
+    border-radius:15px;
+
+}
+
+/* Progress */
+
+.progress{
+
+    height:12px;
+
+    border-radius:20px;
+
+}
+
+.progress-bar{
+
+    border-radius:20px;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#1b1b1b;
+
+}
+
+footer h5{
+
+    font-weight:700;
+
+}
+
+footer p{
+
+    color:#bbb;
+
+}
+
+/* Statistics */
+
+.stats{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.stats h2{
+
+    color:#0d6efd;
+
+    font-weight:bold;
+
+}
+
+/* Hero */
+
+.hero{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(255,255,255,.08);
+
+    border-radius:50%;
+
+    top:-100px;
+
+    right:-100px;
+
+}
+
+/* Floating Animation */
+
+.float{
+
+    animation:float 3s ease-in-out infinite;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-10px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* Shadow */
+
+.shadow-lg{
+
+    box-shadow:0 15px 30px rgba(0,0,0,.15)!important;
+
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.dashboard-title{
+
+font-size:28px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:60px 20px;
+
+}
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.kpi-card{
+
+margin-bottom:20px;
+
+}
+
+.chart-card{
+
+margin-bottom:20px;
+
+}
+
+.navbar-brand{
+
+font-size:20px;
+
+}
+
+}
+
+@media(max-width:576px){
+
+.hero h1{
+
+font-size:24px;
+
+}
+
+.hero p{
+
+font-size:16px;
+
+}
+
+.btn{
+
+width:100%;
+
+margin-bottom:10px;
+
+}
+
+}
