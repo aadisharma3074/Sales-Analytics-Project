@@ -1,0 +1,272 @@
+{% extends "base.html" %}
+
+{% block title %}Analytics{% endblock %}
+
+{% block content %}
+
+<div class="container-fluid">
+
+    <h2 class="fw-bold mb-4">
+        <i class="fas fa-chart-pie text-primary"></i>
+        Sales Analytics
+    </h2>
+
+    <!-- First Row -->
+
+    <div class="row">
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-primary text-white">
+
+                    Sales by Region
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="salesRegion"></canvas>
+
+                    <hr>
+
+                    <p>
+                        <strong>Insight:</strong> West region contributes the highest sales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-success text-white">
+
+                    Profit by Category
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="profitCategory"></canvas>
+
+                    <hr>
+
+                    <p>
+                        <strong>Insight:</strong> Technology is the most profitable category.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Second Row -->
+
+    <div class="row">
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-warning">
+
+                    Monthly Sales Trend
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="monthlySales"></canvas>
+
+                    <hr>
+
+                    <p>
+                        <strong>Insight:</strong> Sales increased steadily during the last quarter.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-danger text-white">
+
+                    Customer Segments
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="segmentChart"></canvas>
+
+                    <hr>
+
+                    <p>
+                        <strong>Insight:</strong> Consumer segment contributes the largest share of sales.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Third Row -->
+
+    <div class="row">
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-info text-white">
+
+                    Top Products
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="topProducts"></canvas>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-6 mb-4">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-secondary text-white">
+
+                    Discount vs Profit
+
+                </div>
+
+                <div class="card-body">
+
+                    <canvas id="discountProfit"></canvas>
+
+                    <hr>
+
+                    <p>
+                        <strong>Insight:</strong> Higher discounts generally reduce profit.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+
+// Sales by Region
+
+new Chart(document.getElementById('salesRegion'),{
+type:'bar',
+data:{
+labels:['West','East','Central','South'],
+datasets:[{
+label:'Sales',
+data:[720000,680000,500000,390000]
+}]
+}
+});
+
+// Profit by Category
+
+new Chart(document.getElementById('profitCategory'),{
+type:'pie',
+data:{
+labels:['Technology','Furniture','Office Supplies'],
+datasets:[{
+data:[145000,18000,123000]
+}]
+}
+});
+
+// Monthly Sales
+
+new Chart(document.getElementById('monthlySales'),{
+type:'line',
+data:{
+labels:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],
+datasets:[{
+label:'Sales',
+data:[120,150,160,180,200,210,220,240,260,280,300,340]
+}]
+}
+});
+
+// Customer Segment
+
+new Chart(document.getElementById('segmentChart'),{
+type:'doughnut',
+data:{
+labels:['Consumer','Corporate','Home Office'],
+datasets:[{
+data:[52,30,18]
+}]
+}
+});
+
+// Top Products
+
+new Chart(document.getElementById('topProducts'),{
+type:'bar',
+data:{
+labels:['Phones','Chairs','Binders','Storage','Tables'],
+datasets:[{
+label:'Sales',
+data:[95000,82000,71000,65000,61000]
+}]
+}
+});
+
+// Discount vs Profit
+
+new Chart(document.getElementById('discountProfit'),{
+type:'scatter',
+data:{
+datasets:[{
+label:'Discount vs Profit',
+data:[
+{x:5,y:90},
+{x:10,y:85},
+{x:15,y:75},
+{x:20,y:60},
+{x:30,y:35},
+{x:40,y:10}
+]
+}]
+}
+});
+
+</script>
+
+{% endblock %}

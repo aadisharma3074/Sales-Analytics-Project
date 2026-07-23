@@ -1,0 +1,236 @@
+.{% extends "base.html" %}
+
+{% block title %}Business Recommendations{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+    <h2 class="text-center fw-bold mb-5">
+        <i class="fas fa-lightbulb text-warning"></i>
+        AI Business Recommendations
+    </h2>
+
+    <div class="row">
+
+        <!-- Recommendation 1 -->
+
+        <div class="col-lg-4 mb-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <i class="fas fa-laptop fa-3x text-primary mb-3"></i>
+
+                    <h4>Technology Category</h4>
+
+                    <p>
+
+                        Increase inventory for Technology products
+                        because they generate the highest sales and profit.
+
+                    </p>
+
+                    <span class="badge bg-success">
+
+                        High Priority
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Recommendation 2 -->
+
+        <div class="col-lg-4 mb-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <i class="fas fa-percent fa-3x text-danger mb-3"></i>
+
+                    <h4>Reduce Discounts</h4>
+
+                    <p>
+
+                        Avoid discounts above 20% because
+                        they significantly reduce profit.
+
+                    </p>
+
+                    <span class="badge bg-danger">
+
+                        Critical
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Recommendation 3 -->
+
+        <div class="col-lg-4 mb-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <i class="fas fa-map-marker-alt fa-3x text-success mb-3"></i>
+
+                    <h4>West Region</h4>
+
+                    <p>
+
+                        Focus marketing campaigns in the
+                        West Region to maximize revenue.
+
+                    </p>
+
+                    <span class="badge bg-primary">
+
+                        Recommended
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Second Row -->
+
+    <div class="row">
+
+        <div class="col-lg-4 mb-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <i class="fas fa-chair fa-3x text-warning mb-3"></i>
+
+                    <h4>Furniture Category</h4>
+
+                    <p>
+
+                        Improve pricing strategy because
+                        Furniture has lower profitability.
+
+                    </p>
+
+                    <span class="badge bg-warning text-dark">
+
+                        Medium Priority
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 mb-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <i class="fas fa-users fa-3x text-info mb-3"></i>
+
+                    <h4>Customer Segment</h4>
+
+                    <p>
+
+                        Corporate customers generate
+                        better average profit.
+
+                    </p>
+
+                    <span class="badge bg-info">
+
+                        Opportunity
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-lg-4 mb-4">
+
+            <div class="card shadow border-0 h-100">
+
+                <div class="card-body text-center">
+
+                    <i class="fas fa-chart-line fa-3x text-success mb-3"></i>
+
+                    <h4>Future Growth</h4>
+
+                    <p>
+
+                        Increase investment in products
+                        with continuously growing sales.
+
+                    </p>
+
+                    <span class="badge bg-success">
+
+                        Growth
+
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <div class="card shadow">
+
+        <div class="card-header bg-primary text-white">
+
+            Overall Business Summary
+
+        </div>
+
+        <div class="card-body">
+
+            <ul>
+
+                <li>Technology is the best-performing category.</li>
+
+                <li>West Region contributes the highest sales.</li>
+
+                <li>Discounts greater than 20% reduce profitability.</li>
+
+                <li>Corporate customers provide higher average profit.</li>
+
+                <li>Focus on high-performing products for future growth.</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}

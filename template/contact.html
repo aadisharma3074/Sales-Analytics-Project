@@ -1,0 +1,318 @@
+{% extends "base.html" %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+
+<div class="container mt-5">
+
+    <div class="text-center mb-5">
+
+        <h1 class="fw-bold">
+
+            Contact Us
+
+        </h1>
+
+        <p class="text-muted">
+
+            We'd love to hear from you.
+
+        </p>
+
+    </div>
+
+    <div class="row">
+
+        <!-- Contact Form -->
+
+        <div class="col-lg-7">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-primary text-white">
+
+                    <h4>
+
+                        Send Message
+
+                    </h4>
+
+                </div>
+
+                <div class="card-body">
+
+                    <form action="/contact" method="POST">
+
+                        <div class="mb-3">
+
+                            <label>Name</label>
+
+                            <input type="text"
+
+                                   class="form-control"
+
+                                   name="name"
+
+                                   required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label>Email</label>
+
+                            <input type="email"
+
+                                   class="form-control"
+
+                                   name="email"
+
+                                   required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label>Subject</label>
+
+                            <input type="text"
+
+                                   class="form-control"
+
+                                   name="subject"
+
+                                   required>
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <label>Message</label>
+
+                            <textarea
+
+                                class="form-control"
+
+                                rows="5"
+
+                                name="message"
+
+                                required></textarea>
+
+                        </div>
+
+                        <button class="btn btn-primary">
+
+                            <i class="fas fa-paper-plane"></i>
+
+                            Send Message
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Information -->
+
+        <div class="col-lg-5">
+
+            <div class="card shadow">
+
+                <div class="card-header bg-success text-white">
+
+                    <h4>
+
+                        Contact Information
+
+                    </h4>
+
+                </div>
+
+                <div class="card-body">
+
+                    <p>
+
+                        <i class="fas fa-user text-primary"></i>
+
+                        <strong>Developer:</strong>
+
+                        Aadi Sharma
+
+                    </p>
+
+                    <hr>
+
+                    <p>
+
+                        <i class="fas fa-envelope text-danger"></i>
+
+                        <strong>Email:</strong>
+
+                        your@email.com
+
+                    </p>
+
+                    <hr>
+
+                    <p>
+
+                        <i class="fas fa-phone text-success"></i>
+
+                        <strong>Phone:</strong>
+
+                        +91 XXXXXXXXXX
+
+                    </p>
+
+                    <hr>
+
+                    <p>
+
+                        <i class="fas fa-map-marker-alt text-warning"></i>
+
+                        <strong>Location:</strong>
+
+                        Himachal Pradesh, India
+
+                    </p>
+
+                    <hr>
+
+                    <a href="https://github.com/"
+
+                       target="_blank"
+
+                       class="btn btn-dark w-100 mb-2">
+
+                        <i class="fab fa-github"></i>
+
+                        GitHub
+
+                    </a>
+
+                    <a href="https://linkedin.com/"
+
+                       target="_blank"
+
+                       class="btn btn-primary w-100 mb-2">
+
+                        <i class="fab fa-linkedin"></i>
+
+                        LinkedIn
+
+                    </a>
+
+                    <a href="https://predictive-analytics-system-week5.onrender.com/"
+
+                       target="_blank"
+
+                       class="btn btn-success w-100">
+
+                        <i class="fas fa-globe"></i>
+
+                        Live Demo
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br>
+
+    <!-- FAQ -->
+
+    <div class="card shadow">
+
+        <div class="card-header bg-dark text-white">
+
+            Frequently Asked Questions
+
+        </div>
+
+        <div class="card-body">
+
+            <div class="accordion" id="faq">
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button"
+
+                                data-bs-toggle="collapse"
+
+                                data-bs-target="#q1">
+
+                            What does this project do?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="q1"
+
+                         class="accordion-collapse collapse show">
+
+                        <div class="accordion-body">
+
+                            Predicts order profitability and provides
+                            business insights using Machine Learning.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed"
+
+                                data-bs-toggle="collapse"
+
+                                data-bs-target="#q2">
+
+                            Which technologies are used?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="q2"
+
+                         class="accordion-collapse collapse">
+
+                        <div class="accordion-body">
+
+                            Python, Flask, HTML, CSS,
+                            JavaScript, Bootstrap,
+                            Scikit-learn and Chart.js.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+{% endblock %}
